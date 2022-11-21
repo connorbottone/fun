@@ -5,7 +5,7 @@
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: lightgoldenrodyellow;
+    background-color: burlywood;
     color: darkred;
     
 }
@@ -43,9 +43,10 @@
     color: aquamarine;
     
 }
-.About p{
+.About article{
     color: red;
     font-size: large;
+    justify-content: 20%;
     /* flex-wrap: wrap; */
     
 }
