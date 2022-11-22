@@ -1,150 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="style.css">
-  
-  
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Connor.Bottone</title>
+    <!-- renamed title -->
 </head>
 
 <body>
-    <section id="fix"><div class="header">
-        <h1>Connor.Bottone</h1>
-        <div>
+    <!-- renamed section header -->
+    <header class="header">
+        <h1>Connor<span class="seo">.</span>Bottone</h1>
+        <!-- changing div to nav in css and html -->
+        <nav>   
             <ul>
                 <li>
-                    <a href=#About-me>About me</a>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
                 </li>
                 <li>
-                    <a href=#projects>Projects</a>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
                 </li>
                 <li>
-                    <a href=#contact>Contact Link</a>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
+        </nav>
+    </header>
+    
+    <article class="hero">
+      <h1>ABOUT ME</h1>
+      <img src="./images/mere2.png" alt="me">
+     <div > Hi, my name is Connor Bottone. I am a beginer web developer with a thirst for knowledge and growth.
+       I am currently enrolled in the Rutgers Coding bootcamp. This school is provideing me with the knowledge and resources to start a carrer within the web-development feild. At the end of this school I will be equiped with the knowledge to operate Html, CSS and Javascrpit. I plan to further grow my knowlede after schooling thru work experience and additional schooling.
+      When im not working and studying I enjoy going to the skatepark , working out and playing Valorant.
+     </div>
+    </article>
+    <aside class="benefits">
+      
+      <section class="benefit">
+          <h3>Lead Generation</h3>
+          
+          <img src="./assets/images/lead-generation.png" alt="Lead Generation" />
+          <p>
+              Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+          </p>
+      </section>
+      <section class="benefit" rel="brand awareness">
+          <h3>Brand Awareness</h3>
+          
+          <img src="./assets/images/brand-awareness.png" alt="Brand awareness"/>
+          <p>
+              Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+          </p>
+      </section>
+     
+      <section class="benefit">
+          <h3>Cost Management</h3>
+        
+          <img src="./assets/images/cost-management.png" alt="cost management"/>
+          <p>
+              As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+          </p>
+      </section>
+  </aside>
+    <!-- renamed section main -->
+    <main class="content">
+        <!-- renamed from div to section -->
+        <section id="search-engine-optimization" class="search">
+            <!-- added alt description to img -->
+            <div  class="float-left"></div>
+            <h2>Projects</h2>
+            <p>
+                Check out some of my work 
+            </p>
+        </section>
+        <!-- renamed from div to section -->
+        <section id="online-reputation-management" class="search">
+            <!-- added alt description to img -->
+            <!-- <img src="./assets/images/online-reputation-management.jpg" alt="Labtop displaying bar graph moving up" class="float-right" />
+            <h2>Online Reputation Management</h2>
+            <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </section>
+        <!- renamed from div to section -->
+        <!-- <section id="social-media-marketing" class="search"> -->
+            <!--added alt description to img  -->
+            <!-- <img src="./assets/images/social-media-marketing.jpg" alt="table-meeting discussing social media markting" class="float-left" />
+            <h2>Social Media Marketing</h2>
+            <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+            </p>
+        </main>
+    </section> --> -->
+    <!-- renamed from div to aside -->
+    
+   <!-- renamed from div to footer -->
+    <footer class="footer">
+        <h2>Contact Me</h2>
+        <p>
+            
+        </p>
+    </footer>
+</body>
 
-    </section>
-  <section class="section" id="About-me">
-    <div class="About" >
-      <h1 >About Me</h1>
-      <article>Hi, my name is Connor Bottone. I am a beginer web developer with a thirst for knowledge and growth.
-        I am currently erolled in the Rutgers Coding bootcamp. This school is provideing me with the knowledge and resources to start a carrer within the web-development feild.
-        At the end of this school I will be equiped with the knowledge to operate Html, CSS and Javascrpit.
-        I plan to further grow my knowlede after schooling thru work experience and additional schooling.
-        When im not working and studying I enjoy going to the skatepark , working out and playing Valorant.
-      </article>
-    </div>
-  </section>
-   
-
-  <section class="section" id="projects">
-    <div class="container">
-      <h1 class="title">Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-3by2">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <div class="container">
-      <h1 class="title">Contact</h1>
-      <hr />
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="" class="icon is-large">
-              <i class="fab fa-2x fa-github"></i>
-            </a>
-            <p class="heading"><a href="">github.com/connorbottone</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://fullstackmark.com" class="icon is-large">
-              <i class="fas fa-2x fa-globe"></i>
-            </a>
-            <p class="heading"><a href="https://fullstackmark.com">fullstackmark.com</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="mailto:connorbotone@gmail.com" class="icon is-large">
-              <i class="fas fa-2x fa-envelope"></i>
-            </a>
-            <p class="heading"><a href="mailto:connorbotone@gmail.com">connorbottone@gmail.com/a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://www.linkedin.com/in/" class="icon is-large">
-              <i class="fab fa-2x fa-linkedin-in"></i>
-            </a>
-            <p class="heading"><a href="https://www.linkedin.com/in">linkedin</a></p>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
+</html>
