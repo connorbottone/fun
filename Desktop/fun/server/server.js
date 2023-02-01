@@ -1,20 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+const db = require('../config/connection');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Connect to the MongoDB database
-mongoose.connect('mongodb://localhost/tft-legends', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  console.log('Connected to the TFT Legends database');
-});
 
 // Define the TFT Legend schema
 const tftLegendSchema = new mongoose.Schema({
@@ -43,7 +33,8 @@ app.get('/api/legends/:id', function(req, res) {
   });
 });
 
-// Start the server
-app.listen(port, function() {
-  console.log(`TFT Legends API listening on port ${port}`);
-});
+db.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`API server for ${activity} running on port ${PORT}!`);
+    });
+  });
